@@ -19,7 +19,7 @@ builder.defineStreamHandler(async ({ id }) => {
       streams: [
         {
           title: "Os Incríveis Torrent 1080p",
-          infoHash: "E029098D27C543891BD3AC29FD473E80377B954A"
+          infoHash: "E029098D27C543891BD3AC29FD473E80377B954A",
           fileIdx: 0
         }
       ]
