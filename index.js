@@ -4,7 +4,7 @@ const manifest = {
   id: "org.telaverde",
   version: "1.0.0",
   name: "TelaVerde",
-  description: "Addon de exemplo TelaVerde com filmes e séries",
+  description: "Addon de exemplo TelaVerde",
   resources: ["catalog", "stream"],
   types: ["movie", "series"],
   idPrefixes: ["tela-"],
