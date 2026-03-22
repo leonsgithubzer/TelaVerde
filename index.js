@@ -2,10 +2,10 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
 const manifest = {
   id: "org.telaverde",
-  version: "1.0.2",
+  version: "1.0.6",
   name: "TelaVerde",
-  description: "Addon TelaVerde",
-  catalogs: [],         // obrigatório
+  description: "Addon TelaVerde (Torrent)",
+  catalogs: [],
   resources: ["stream"],
   types: ["movie"],
   idPrefixes: ["tt"]
@@ -18,8 +18,9 @@ builder.defineStreamHandler(async ({ id }) => {
     return {
       streams: [
         {
-          title: "Os Incríveis",
-          url: "https://drive.google.com/uc?export=download&id=14XHjXZXp0rSDOIygAe1E3PbjYBhVVsMW"
+          title: "Os Incríveis Torrent 1080p",
+          infoHash: "E029098D27C543891BD3AC29FD473E80377B954A"
+          fileIdx: 0
         }
       ]
     };
