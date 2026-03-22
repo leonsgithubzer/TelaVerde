@@ -1,0 +1,10 @@
+{
+  "name": "TelaVerde",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.1",
+    "stremio-addon-sdk": "^1.6.10"
+  }
+}

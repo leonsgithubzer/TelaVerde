@@ -1,0 +1,14 @@
+{
+  "id": "org.tela.verde",
+  "version": "1.0.0",
+  "name": "TelaVerde",
+  "description": "Meu primeiro addon Stremio",
+  "resources": ["catalog", "stream"],
+  "types": ["movie", "series"],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "telaVerdeCatalog"
+    }
+  ]
+}
