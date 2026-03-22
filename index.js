@@ -2,9 +2,10 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 
 const manifest = {
   id: "org.telaverde",
-  version: "1.0.1",
+  version: "1.0.2",
   name: "TelaVerde",
   description: "Addon TelaVerde",
+  catalogs: [],         // obrigatório
   resources: ["stream"],
   types: ["movie"],
   idPrefixes: ["tt"]
