@@ -5,39 +5,15 @@ const manifest = {
   version: "1.0.0",
   name: "TelaVerde",
   description: "Addon de exemplo TelaVerde",
-  resources: ["catalog", "stream"],
+  resources: ["stream"],
   types: ["movie"],
-  idPrefixes: ["tela-"],
-  catalogs: [
-    {
-      type: "movie",
-      id: "telaverde-movies",
-      name: "TelaVerde Filmes"
-    }
-  ]
+  idPrefixes: ["tt"]
 };
 
 const builder = new addonBuilder(manifest);
 
-builder.defineCatalogHandler(async ({ type, id }) => {
-  if (type === "movie" && id === "telaverde-movies") {
-    return {
-      metas: [
-        {
-          id: "tela-001",
-          type: "movie",
-          name: "Os Incríveis",
-          poster: "https://via.placeholder.com/200x300?text=Os+Incriveis"
-        }
-      ]
-    };
-  }
-
-  return { metas: [] };
-});
-
 builder.defineStreamHandler(async ({ id }) => {
-  if (id === "tela-001") {
+  if (id === "tt0317705") {
     return {
       streams: [
         {
